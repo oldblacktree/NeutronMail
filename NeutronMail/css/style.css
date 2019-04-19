@@ -80,7 +80,8 @@ body {
   font-family: "TitilliumWeb-Regular", sans-serif;
   font-size: 16px;
   color: #6f6f6f;
-  background: url('../assets/img/background-top.jpg') no-repeat 50% 222px
+  background: url('../assets/img/background-top.jpg') no-repeat 50% 222px;
+  height: 2000px;
 }
 
 .header {
@@ -319,19 +320,119 @@ body {
   background-color: #676766;
   color: white;
 }
+.sotial__item--google:hover {
+  background-color: #dc5443;
+  transition-duration: 0.2s;
+}
 .sotial__item {
   display: block;
   font-size: 22px;
   color: #676766;
 }
+.sotial li:nth-child(2):hover a {
+  color: #35609f;
+}
+.sotial li:nth-child(3):hover a {
+  color: #2daae1;
+}
+.about {
+  padding-left: 80px;
+  display: flex;
+  justify-content: space-between;
+  margin: 357px auto 0;
+  width: 1320px;
 
+}
+.about__item {
+  position: relative;
+  width: 365px;
+}
 
+.about__title {
+  padding-left: 60px;
+  font-size: 1.875rem;
+  letter-spacing: 0.025rem;
+}
+.about__item:nth-child(1)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url(../assets/img/privacy.png) no-repeat -12px -8px;
+}
 
+.about__item:nth-child(2)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: url(../assets/img/lock.png) no-repeat -25px -16px;
+}
+.about__item:nth-child(2)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -43px;
+  top: -130px;
+  height: 210px;
+  border-left: 1px solid #b0b0b0;
+}
+.about__item:nth-child(3)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: url(../assets/img/key.png) no-repeat -15px -5px;
+}
+.about__item:nth-child(3)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -49px;
+  top: 2px;
+  height: 434px;
+  border-left: 1px solid #b0b0b0;
+}
+
+.about__subtitle {
+  margin-top: 3px;
+  padding-left: 60px;
+  font-size: 1.125rem;
+  letter-spacing: 0.02rem;
+}
+.about__text {
+  margin-top: 30px;
+  line-height: 1.41rem;
+  font-size: 0.875rem;
+}
+
+@media screen and (max-width: 1350px) {
+  .about{
+    padding: 0;
+    width: 100%;
+  }
+  .about__item:nth-child(2)::after,
+  .about__item:nth-child(3)::after {
+    display: none;
+  }
+  
+  }
 
 @media screen and (max-width: 1200px) {
 .sotial-wrapper {
   right: 30px;
   top: 276px;
+}
+.about {
+  margin-top: 220px;
+  flex-direction: column;
+  align-items: center;
+}
+.about__item {
+  margin-top: 50px;
 }
 }
 
