@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <!-- <header class="header">
     <div class="header-column">
       <div class="logo">
         <h1>neutron<span class="logo--purple">Mail<span></h1>
@@ -39,9 +39,9 @@
       <button class="login"><i class="icon-login"></i>Log in</button>
       <button class="signup">Sign up</button>
     </form>
-  </header>
+  </header> -->
   <main class="main">
-    <section class="main-top">
+    <!-- <section class="main-top">
       <h2 class="main-top__title">Secure Email Communication</h2>
       <p class="main-top__subtitle">Based in <span>Somewhere</span></p>
       <div class="source">
@@ -78,15 +78,54 @@
         <p class="about__text">No personal information is required to create your secure email account. By default, we
           do not keep any IP logs which can be linked to your anonymous email account. Your privacy comes first.</p>
       </div>
-    </section>
+    </section> -->
     <section class="security">
-      <h2 class="security__title">Physical Security</h2>
-      <p class="security__subtitle">NeutronMail's infrastructure resides in Europe's <span
-          class="security__subtitle--red">most secure</span> datacenter,
-        underneath 1000 meters of solid rock</p>
-      <a class="security__more-about" href="#">Learn more about our security features</a>
+      <div class="security__container">
+        <h2 class="security__title">Physical Security</h2>
+        <p class="security__subtitle">NeutronMail's infrastructure resides in Europe's <span
+            class="security__subtitle--red">most secure</span> datacenter,
+          underneath 1000 meters of solid rock.</p>
+        <a class="security__more-about" href="#">Learn more about our security features</a>
+      </div>
+      <div class="security__partners">
+        <img src="assets/img/partners.jpg" alt="post about us">
+      </div>
+      <div class="slider-wrap">
+        <input type="radio" name="slides" id="point1" checked>
+        <input type="radio" name="slides" id="point2">
+        <input type="radio" name="slides" id="point3">
+        <div class="slider">
+          <div class="slider__item">
+            <p>A new email service being developed by a group from MIT and CERN promises to bring secure,
+              encrypted email to the masses and keep sensitive information away from prying eyes.</p>
+            <p class="slider__author">— Boston Herald</p>
+          </div>
+          <div class="slider__item">
+            <p>Deutschland – mein Herz in Flammen<br>
+              Will dich lieben und verdammen<br>
+              Deutschland – dein Atem kalt<br>
+              So jung, und doch so alt<br>
+              Deutschland!</p>
+            <p class="slider__author">— Rammstein</p>
+          </div>
+          <div class="slider__item">
+            <p> I'm at sixes and sevens<br>
+              in the shade of thy heavens<br>
+              No moon, nor sun<br>
+              Meridian<br>
+              prevail in my oblivion</p>
+            <p class="slider__author">— Sirenia</p>
+          </div>
+        </div>
+        <div class="control">
+          <label class="control__item" for="point1"></label>
+          <label class="control__item" for="point2"></label>
+          <label class="control__item" for="point3"></label>
+        </div>
+      </div>
     </section>
-    <div class="security__slider"></div>
+
+
   </main>
 </body>
 
