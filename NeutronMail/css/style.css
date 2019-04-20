@@ -572,6 +572,40 @@ body {
   opacity: 1;
 }
 
+.device {
+  box-sizing: content-box;
+  display: flex;
+  margin: 18px auto 0;
+  padding-right: 49px;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 465px;
+}
+.device__title {
+  font-size: 2.25rem;
+  color: #535353;
+  letter-spacing: 0.015rem;
+}
+.device__text {
+  margin-top: 17px;
+  padding-right: 5px;
+  color: #959393;
+  font-size: 1rem;
+  text-align: right;
+  line-height: 1.4rem;
+  letter-spacing: 0.01rem;
+}
+.device__download {
+  display: flex;
+  margin-top: 30px;
+}
+.device__download li:nth-of-type(1) {
+  margin-right: 13px;
+}
+.device__link img{
+  display: block;
+  border-radius: 6px;
+}
 
 
 
@@ -656,6 +690,15 @@ body {
 
   .security__partners {
     display: none;
+  }
+  .slider-wrap {
+    padding: 0;
+    width: 80%;
+  }
+  .slider__item {
+    font-size: 1rem;
+    width: 100%;
+    line-height: 1.5rem;
   }
 }
 
