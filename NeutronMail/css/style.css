@@ -128,8 +128,17 @@ body {
   color: #959595;
 }
 
-.language__item a:hover {
+.language__item a:hover,
+.navigation__item a:hover,
+ .footer-sotial__item a:hover,
+ .contact__item:hover{
   text-shadow: 0 0 .8px #959595, 0 0 .8px #959595, 0 0 .8px #959595;
+}
+.language__item a:active,
+.navigation__item a:active,
+.footer-sotial__item a:active,
+.contact__item:active {
+  text-shadow: 0 0 .8px #000, 0 0 .8px #959595, 0 0 .8px #959595;
 }
 
 .language__item a:hover:after {
@@ -168,12 +177,6 @@ body {
   letter-spacing: 0.003rem;
   color: #454545;
 }
-
-.navigation__item a:hover {
-  text-shadow: 0 0 .8px #959595, 0 0 .8px #959595, 0 0 .8px #959595;
-  transition-duration: 0.2s;
-}
-
 .login {
   width: 94px;
   height: 40px;
@@ -214,12 +217,15 @@ body {
   color: white;
 }
 
-.signup:hover {
-  background: linear-gradient(352deg, rgba(112, 133, 224, 0.9) 0%, rgba(88, 44, 126, 0.9) 73%);
-  color: black;
+.signup:hover,
+.btn:hover,
+.store-link:hover {
+  background: linear-gradient(352deg, rgba(88, 44, 126, 1) 0%, rgba(98, 118, 205, 1) 73%);
 }
 
-.signup:active {
+.signup:active,
+.btn:active,
+.store-link:active {
   box-shadow: 0 7px 18px 2px #6274ca;
 }
 
