@@ -581,11 +581,13 @@ body {
   align-items: flex-end;
   max-width: 465px;
 }
+
 .device__title {
   font-size: 2.25rem;
   color: #535353;
   letter-spacing: 0.015rem;
 }
+
 .device__text {
   margin-top: 17px;
   padding-right: 5px;
@@ -595,16 +597,86 @@ body {
   line-height: 1.4rem;
   letter-spacing: 0.01rem;
 }
+
 .device__download {
   display: flex;
   margin-top: 30px;
 }
+
 .device__download li:nth-of-type(1) {
   margin-right: 13px;
 }
-.device__link img{
+
+.device__link img {
   display: block;
   border-radius: 6px;
+}
+
+.device__link:hover img {
+  opacity: 0.8;
+}
+
+.support-us {
+  position: relative;
+  margin-top: 238px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.support-us::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 23.4%;
+  top: -75px;
+  width: 2000px;
+  border-top: 1px solid #b0b0b0;
+}
+
+.support-us::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -15px;
+  bottom: -84px;
+  width: calc(100% * 0.775);
+  border-top: 1px solid #b0b0b0;
+}
+
+.support-us__title {
+  font-size: 2.25rem;
+  color: #535353;
+  letter-spacing: 0.02rem;
+}
+
+.support-us__subtitle {
+  margin-top: 7px;
+  font-size: 1.8125rem;
+  color: #7c7c7c;
+  letter-spacing: 0.012rem;
+}
+
+.support-us__form {
+  margin-top: 41px;
+  display: flex;
+  justify-content: space-between;
+  width: 465px;
+}
+
+.support-us__upgrade {
+  box-shadow: 0px 5px 15px 2px #2e3e91aa;
+  letter-spacing: 0.03rem;
+}
+
+.support-us__donate {
+  width: 166px;
+  background: linear-gradient(132deg, rgba(54, 186, 225, 1) 15%, rgba(94, 123, 234, 1) 85%);
+  box-shadow: 0 5px 15px 1px #55a1a9;
+}
+
+.support-us__donate i {
+  margin-left: -5px;
 }
 
 
@@ -691,10 +763,12 @@ body {
   .security__partners {
     display: none;
   }
+
   .slider-wrap {
     padding: 0;
     width: 80%;
   }
+
   .slider__item {
     font-size: 1rem;
     width: 100%;
@@ -705,6 +779,21 @@ body {
 @media screen and (max-width: 750px) {
   .sotial-wrapper {
     display: none;
+  }
+
+  .device {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .support-us__form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .support-us__donate {
+    margin-top: 20px;
   }
 }
 
