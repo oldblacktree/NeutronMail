@@ -80,9 +80,10 @@ body {
   font-family: "TitilliumWeb-Regular", sans-serif;
   font-size: 16px;
   color: #6f6f6f;
-  background: url('../assets/img/background-top.jpg') no-repeat 50% 222px;
+  background: url('../assets/img/background-top.jpg') no-repeat 50% 222px,
+              url('../assets/img/divice.png') no-repeat 1004px 1559px,
+              linear-gradient(353.7deg, rgba(255, 255, 255, 1) 35.4%, rgba(239, 239, 239, 0.5) 43.4%, rgba(255, 255, 255, 1) 43.4%);
   overflow-x: hidden;
-  height: 10000px
 }
 
 .header {
@@ -634,6 +635,7 @@ body {
   top: -75px;
   width: 2000px;
   border-top: 1px solid #b0b0b0;
+  z-index: 1;
 }
 
 .support-us__title {
@@ -802,11 +804,46 @@ body {
   top: 11px;
   border-radius: 1px;
 }
+.footer {
+  font-size: 0.75rem;
+  color: #5c5c5c;
+  margin-top: 79px;
+  margin-left: 12.7%;
+}
+.footer-sotial {
+  display: flex;
+}
+.footer-sotial__item {
+  position: relative;
+  text-decoration: underline;
+  
+  margin-right: 30px;
+}
+.footer-sotial__item a {
+color: #5c5c5c;
+}
+
+.footer-sotial__item:nth-of-type(n + 2)::before {
+  content: "/";
+  display: block;
+  position: absolute;
+  left: -18px;
+}
+.footer__copyrite {
+  margin-top: 19px;
+}
 
 
 
 
 
+
+
+@media screen and (max-width: 1600px) {
+  body{
+  background: url('../assets/img/background-top.jpg') no-repeat 50% 222px;
+  }
+}
 
 @media screen and (max-width: 1350px) {
   .about {
@@ -823,7 +860,10 @@ body {
   .partners {
     width: 100%;
   }
-
+  .contact {
+    margin-left: 0;
+    width: 95%;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -849,6 +889,9 @@ body {
 
 @media screen and (max-width: 1000px) {
   .partners {
+    display: none;
+  }
+  .contact__column:nth-of-type(2)::after {
     display: none;
   }
 }
@@ -901,6 +944,19 @@ body {
     width: 100%;
     line-height: 1.5rem;
   }
+  .contact {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .contact__email {
+    flex-grow: 0;
+  }
+  .contact__column:nth-of-type(2),
+  .contact__column:nth-of-type(3) {
+    margin-right: 0;
+  }
+
 }
 
 @media screen and (max-width: 750px) {
