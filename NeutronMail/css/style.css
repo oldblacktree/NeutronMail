@@ -131,13 +131,17 @@ body {
 .language__item a:hover,
 .navigation__item a:hover,
  .footer-sotial__item a:hover,
- .contact__item:hover{
+ .contact__item:hover,
+ .email__item:hover,
+ .contact__support a:hover {
   text-shadow: 0 0 .8px #959595, 0 0 .8px #959595, 0 0 .8px #959595;
 }
 .language__item a:active,
 .navigation__item a:active,
 .footer-sotial__item a:active,
-.contact__item:active {
+.contact__item:active,
+.email__item:active,
+.contact__support a:active {
   text-shadow: 0 0 .8px #000, 0 0 .8px #959595, 0 0 .8px #959595;
 }
 
@@ -219,7 +223,8 @@ body {
 
 .signup:hover,
 .btn:hover,
-.store-link:hover {
+.store-link:hover
+{
   background: linear-gradient(352deg, rgba(88, 44, 126, 1) 0%, rgba(98, 118, 205, 1) 73%);
 }
 
@@ -229,9 +234,6 @@ body {
   box-shadow: 0 7px 18px 2px #6274ca;
 }
 
-
-
-/*----------------- main --------------------*/
 .main-top {
   display: flex;
   position: relative;
